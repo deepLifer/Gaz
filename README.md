@@ -2,6 +2,6 @@
 ## intro
 
 this document is for:
-*moseco
-*tram
+* moseco
+* tram
 
