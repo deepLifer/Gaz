@@ -29,10 +29,11 @@ def insert_dimension(con,id,description):
 def fill_dicts(con):
 
     dimensions_dict = {0:"мг/м3", 1:"PPM", 2:"г/с",3:"м3/с",4:"град.С",5:"%",6:"м/с",7:"атм" }
+    con.cursor().execute("truncate Dimensions_dictionary")
     for key,value in dimensions_dict.items():
         #print (str(key)+":"+value)
         insert_dimension(con,key,value)
-   
+
 
 
 def helloWorld(name):
